@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clipboard Manager</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #282c34;
+      color: white;
+      width: 300px;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .clipboard-item {
+      background: #3c4043;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    .clipboard-item:hover {
+      background: #4c5053;
+    }
+    .image-preview {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    #clear-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #d9534f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+    #clear-button:hover {
+      background: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clipboard Manager</h1>
+  <div id="clipboardItems"></div>
+  <!-- Add this inside your HTML file -->
+  <button id="clear-button">Clear Copied Items</button>
+  <script src="popup.js"></script>
+</body>
+</html>
